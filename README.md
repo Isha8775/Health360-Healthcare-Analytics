@@ -18,14 +18,15 @@ Health360 is a healthcare analytics project focused on exploring patient demogra
 - Flask (for dashboard embedding, if required)
 
 ## Project Structure
-- `data/` — Original dataset
-- `cleaned_data/` — Cleaned dataset
-- `tableau/` — Tableau workbook and dashboards
-- `flask_app/` — Web application files
-- `documentation/` — Report, screenshots, and testing results
+Health360
+├── app.py
+├── static
+│   └── style.css
+└── templates
+    ├── base.html
+    ├── index.html
+    ├── clinical.html
+    ├── lifestyle.html
+    ├── population.html
+    └── story.html'
 
-## Project Status
-In progress.
-
-## Data Privacy
-Only use datasets that are appropriately licensed and safe to share. Do not publish identifiable or confidential patient information.
