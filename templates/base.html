@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Health360{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Health360</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/clinical">Clinical Risk</a></li>
+            <li><a href="/lifestyle">Lifestyle</a></li>
+            <li><a href="/population">Population Health</a></li>
+            <li><a href="/story">Story</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Health360: Comprehensive Healthcare Risk &amp; Disease Analytics | Built with Tableau &amp; Flask</p>
+    </footer>
+</body>
+</html>

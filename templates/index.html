@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Health360 - Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Health360</h1>
+    <p>Comprehensive Healthcare Risk &amp; Disease Analytics</p>
+    <a class="btn" href="/clinical">Explore Dashboards</a>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>Clinical Risk</h3>
+        <p>Identify high-risk patients using BP, cholesterol, glucose and BMI indicators.</p>
+        <a href="/clinical">View Dashboard</a>
+    </div>
+    <div class="card">
+        <h3>Lifestyle Analysis</h3>
+        <p>Understand how smoking, alcohol and exercise relate to disease occurrence.</p>
+        <a href="/lifestyle">View Dashboard</a>
+    </div>
+    <div class="card">
+        <h3>Population Health</h3>
+        <p>Explore disease patterns across age groups, BMI categories and symptoms.</p>
+        <a href="/population">View Dashboard</a>
+    </div>
+    <div class="card">
+        <h3>Data Story</h3>
+        <p>Follow the guided story of chronic disease risk, scene by scene.</p>
+        <a href="/story">View Story</a>
+    </div>
+</section>
+{% endblock %}
